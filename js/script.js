@@ -164,70 +164,146 @@ P.S. Функции вызывать не обязательно*/
 
 'use strict';
 
-let numberOfFilms;
+// let numberOfFilms;
 
-function start() {
-  numberOfFilms = +prompt('Скільки фільмів ви вже глянули?', '');
+// function start() {
+//   numberOfFilms = +prompt('Скільки фільмів ви вже глянули?', '');
 
-  while(numberOfFilms == null || numberOfFilms == '' || isNaN(numberOfFilms) ) {
-    numberOfFilms = +prompt('Скільки фільмів ви вже глянули?', '');
-  }
-}
-start();
+//   while(numberOfFilms == null || numberOfFilms == '' || isNaN(numberOfFilms) ) {
+//     numberOfFilms = +prompt('Скільки фільмів ви вже глянули?', '');
+//   }
+// }
+// start();
 
-const personalMovieDB = {
-  count: numberOfFilms,
-  movies: {},
-  actors: {},
-  genres: [],
-  privat: false,
-};
+// const personalMovieDB = {
+//   count: numberOfFilms,
+//   movies: {},
+//   actors: {},
+//   genres: [],
+//   privat: false,
+// };
 
 
-function rememberMyFilms() {
-  for (let i = 0; i < 2; i++) {
-    const a = prompt('Останній фільм', ''),
-          b = prompt('Оцінка фільму', '');
+// function rememberMyFilms() {
+//   for (let i = 0; i < 2; i++) {
+//     const a = prompt('Останній фільм', ''),
+//           b = prompt('Оцінка фільму', '');
   
-    if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-      personalMovieDB.movies[a] = b;
-      console.log('Ок все');
-    } else {
-      console.log('Что то не так');
-      i--;
-    }
-  }
-}
-// rememberMyFilms();
+//     if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+//       personalMovieDB.movies[a] = b;
+//       console.log('Ок все');
+//     } else {
+//       console.log('Что то не так');
+//       i--;
+//     }
+//   }
+// }
+// // rememberMyFilms();
 
-function detectPersonalLevel() {
-  if (personalMovieDB.count < 10) {
-    console.log('Мало, меньше 10');
-  } else if (personalMovieDB.count <= 30) {
-    console.log('Норм, меньше (=) 30');
-  } else if (personalMovieDB.count > 30) {
-    console.log('Ок, больше 30');
-  } else {
-    console.log('Русня сосать');
-  }
-}
+// function detectPersonalLevel() {
+//   if (personalMovieDB.count < 10) {
+//     console.log('Мало, меньше 10');
+//   } else if (personalMovieDB.count <= 30) {
+//     console.log('Норм, меньше (=) 30');
+//   } else if (personalMovieDB.count > 30) {
+//     console.log('Ок, больше 30');
+//   } else {
+//     console.log('Русня сосать');
+//   }
+// }
 
-// detectPersonalLevel();
+// // detectPersonalLevel();
 
-function writeYourGenres() {
-  for (let i = 1; i <= 3; i++) {
-    let j = prompt(`Ваш любимый жанр под номером ${i}`);
-    personalMovieDB.genres[i - 1] = j;
-  }
-}
+// function writeYourGenres() {
+//   for (let i = 1; i <= 3; i++) {
+//     let j = prompt(`Ваш любимый жанр под номером ${i}`);
+//     personalMovieDB.genres[i - 1] = j;
+//   }
+// }
 
-writeYourGenres();
+// writeYourGenres();
 
-function showMyDB() {
-  if (personalMovieDB.privat === false) {
-    console.log(personalMovieDB);
-  }
-}
+// function showMyDB() {
+//   if (personalMovieDB.privat === false) {
+//     console.log(personalMovieDB);
+//   }
+// }
 
-showMyDB();
+// showMyDB();
+
+// let awnsw = +prompt('Вкажіть число', '');
+
+// function calculateVolumeAndArea(length) {
+
+//   let volume = Math.pow(length, 3);
+//   let area = 6 * Math.pow(length, 2);
+
+//   if (typeof(length) !== 'number' || length < 0 || !Number.isInteger(length)) {
+//     console.log('Упс, щось пішло не так');
+//   } else {
+//     console.log(`Обʼєм - ${volume}, площа - ${area}`);
+//   }
+// }
+
+// calculateVolumeAndArea(awnsw);
+
+// function myTic(num) {
+//   if (num === )
+// }
+
+// myTic(32);
+
+
+
+// 1) Создайте функцию, которая принимает в себя целое число минут и возвращает время в нужном формате строки. (Смотри пример). Обратите внимание на окончание слова "час" - оно меняется в зависимости от цифры. Если вместо аргумента приходит не число, дробное или отрицательное число - функция возвращает строку "Ошибка, проверьте данные"
+
+// Внимание! Давайте пока ограничимся максимум 600ю минутами (10 часов). Так как проверки на большие числа будут раздувать код (33 часа, 31 час, 11 часов и тд). Этого будет достаточно и код будет проверять именно этот промежуток (1 - 10 часов). Но вы можете реализовать и полный скрипт, он тоже должен проходить тесты.
+
+// function getTimeFromMinutes(minutesTotal) {
+//   if (typeof(minutesTotal) !== 'number' || minutesTotal < 0 || !Number.isInteger(minutesTotal)) {
+//       return "Ошибка, проверьте данные";
+//   }
+
+//   const hours = Math.floor(minutesTotal / 60);
+//   const minutes = minutesTotal % 60;
+
+//   let hoursStr = '';
+
+//   switch (hours) {
+//       case 0: 
+//           hoursStr = 'часов';
+//           break;
+//       case 1:
+//           hoursStr = 'час';
+//           break;
+//       case 2:
+//       case 3:
+//       case 4:
+//           hoursStr = 'часа';
+//           break;
+//       default:
+//           hoursStr = 'часов';
+//   }
+
+//   return `Это ${hours} ${hoursStr} и ${minutes} минут`;
+// }
+
+
+
+  // let userLogin = prompt('Логін', '');
+
+  // if (userLogin == 'Адмін') {
+  //   let userPassword = prompt('Password?', '');
+  //   if (userPassword == 'батя') {
+  //     console.log('Hello, BOSS')
+  //   } else if(userPassword === null) {
+  //     console.log('Не')
+  //   } else {
+  //     console.log('Хз хто тии')
+  //   }
+  // } else if(userLogin === null) {
+  //   console.log('Пустота')
+  // } else {
+  //   console.log('Хз хто ти')
+  // }
 
