@@ -1,17 +1,13 @@
 // let result = '';
 // const lenght = 7;
-
 // for (let i = 1; i < lenght; i++) {
-
 //   for (let j = 0; j < i; j++) {
 //     result += "*";
 //   }
 //   result += "\n";
 // }
 // console.log(result);
-
 // const data = [5, 10, 'Shopping', 20, 'Homework'];
-
 // for (let i = 0; i < data.length; i++) {
 //     if (typeof(data[i]) === 'number') {
 //         data[i] = data[i] * 2;
@@ -19,123 +15,89 @@
 //       data[i] = `${data[i]} - done`;
 //     }
 // }
-
-  // console.log(data);
-
-  // const data = [5, 10, 'Shopping', 20, 'Homework'];
-  // const result = [];
-
-  // // Пишем решение вот тут
-  // for (let i = 1; i <= data.length; i++) {
-  //   result[i - 1] = data[data.length - i]
-  // }
-
-  // console.log(result);
+// console.log(data);
+// const data = [5, 10, 'Shopping', 20, 'Homework'];
+// const result = [];
+// // Пишем решение вот тут
+// for (let i = 1; i <= data.length; i++) {
+//   result[i - 1] = data[data.length - i]
+// }
+// console.log(result);
 //! Практична
-  // const numberOfFilms = +prompt('Скільки фільмів ви вже глянули?', '');
-
-  // const personalMovieDB = {
-  //   count: numberOfFilms,
-  //   movies: {},
-  //   actors: {},
-  //   genres: [],
-  //   privat: false,
-  // };
-
-  // for (let i = 0; i < 2; i++) {
-  //   const a = prompt('Останній фільм', ''),
-  //         b = prompt('Оцінка фільму', '');
-
-  //   if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-  //     personalMovieDB.movies[a] = b;
-  //     console.log('Ок все');
-  //   } else {
-  //     console.log('Что то не так');
-  //     i--;
-  //   }
-  // }
-
-  // if (personalMovieDB.count < 10) {
-  //   console.log('Мало, меньше 10');
-  // } else if (personalMovieDB.count <= 30) {
-  //   console.log('Норм, меньше (=) 30');
-  // } else if (personalMovieDB.count > 30) {
-  //   console.log('Ок, больше 30');
-  // } else {
-  //   console.log('Русня сосать');
-  // }
-
-  // console.log(personalMovieDB);
-  //?
-
+// const numberOfFilms = +prompt('Скільки фільмів ви вже глянули?', '');
+// const personalMovieDB = {
+//   count: numberOfFilms,
+//   movies: {},
+//   actors: {},
+//   genres: [],
+//   privat: false,
+// };
+// for (let i = 0; i < 2; i++) {
+//   const a = prompt('Останній фільм', ''),
+//         b = prompt('Оцінка фільму', '');
+//   if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+//     personalMovieDB.movies[a] = b;
+//     console.log('Ок все');
+//   } else {
+//     console.log('Что то не так');
+//     i--;
+//   }
+// }
+// if (personalMovieDB.count < 10) {
+//   console.log('Мало, меньше 10');
+// } else if (personalMovieDB.count <= 30) {
+//   console.log('Норм, меньше (=) 30');
+// } else if (personalMovieDB.count > 30) {
+//   console.log('Ок, больше 30');
+// } else {
+//   console.log('Русня сосать');
+// }
+// console.log(personalMovieDB);
+//?
 //   function calc(a, b) {
 //     return (a + b);
 //   }
-
 //   console.log(calc(1, 4));
 // // 
 //   let search = (a, b) => {
 //     return(a - b);
 //   };
-
 //   console.log(search(5, 6));
-
 //* Конвертор валют
 // let usdCurr = 41,
 //     eurCurr = 45,
 //     amount = 1472;
-
 // function convertor(amount, curr) {
 //   return(amount * curr);
 // }
-
 // console.log(convertor(amount, eurCurr));
-
 // function sayHello(name) {
 //   return (console.log(`Привет ${name}`));
 // }
-
 // sayHello('Антон');
-
 // function returnNeighboringNumbers(num) {
 //   return (num - 1, num, num + 1);
 // }
-
-
 // 2
 // function returnNeighboringNumbers(num) {
 //   return [num - 1, num, num + 1];
 // }
 // console.log(returnNeighboringNumbers(2));
-
 //? Создайте функцию, которая будет принимать в себя 2 аргумента, оба числа. Первое число - это база, второе число - это сколько раз нужно будет повторить это число в прогрессии. (Смотри пример ниже). Функция должна возвращать строку (или число в особых случаях, о которых ниже), где эти числа идут по порядку, разделенные тремя дефисами "---". После последнего числа их не должно быть.
-
 // Если второй аргумент не является числом, равен или меньше нуля - то возвращать просто первый аргумент. (Проверяем через оператор typeof)
-
 // Примеры:
-
 // Вызов функции getMathResult(5, 3) даст ответ 5---10---15
-
 // Вызов функции getMathResult(3, 10) даст ответ 3---6---9---12---15---18---21---24---27---30
-
 // Вызов функции getMathResult(10, 5) даст ответ 10---20---30---40---50
-
 // Вызов функции getMathResult(10, '5') даст ответ 10
-
 // Вызов функции getMathResult(10, 0) даст ответ 10
-
 // Вызов функции getMathResult(20, -5) даст ответ 20
-
 //? Эта задача уже ближе к реальности, когда вам нужно учитывать и тип данных у аргументов, проверять их и продумывать логику работы внутри. Обратите внимание на прогрессию, она рассчитывается по простой формуле умножения. Если первый аргумент 5, а второй 3, то число повторяется 3 раза, каждый раз увеличиваясь на само себя. Это базовая математика, которая и нужна для работы в 95% случае на фронтенде.
-
 // function getMathResult(num1, num2) {
-
 //   if(typeof(num2) !== 'number' || num2 <= 0) {
 //     return num1;
 //   }
-
 //   let str = '';
-
 //   for(let i = 1; i <= num2; i++) {
 //     if(i === num2) {
 //       str += `${num1 * i}`;
@@ -143,10 +105,8 @@
 //       str += `${num1 * i}---`;
 //     }
 //   }
-
 //   return str;
 // }
-
 // console.log(getMathResult(5, 3));
 
 /* Задание на урок:
@@ -161,20 +121,14 @@ false - выводит в консоль главный объект прогр�
 genres
 
 P.S. Функции вызывать не обязательно*/
-
-'use strict';
-
-// let numberOfFilms;
-
+'use strict'; // let numberOfFilms;
 // function start() {
 //   numberOfFilms = +prompt('Скільки фільмів ви вже глянули?', '');
-
 //   while(numberOfFilms == null || numberOfFilms == '' || isNaN(numberOfFilms) ) {
 //     numberOfFilms = +prompt('Скільки фільмів ви вже глянули?', '');
 //   }
 // }
 // start();
-
 // const personalMovieDB = {
 //   count: numberOfFilms,
 //   movies: {},
@@ -182,13 +136,10 @@ P.S. Функции вызывать не обязательно*/
 //   genres: [],
 //   privat: false,
 // };
-
-
 // function rememberMyFilms() {
 //   for (let i = 0; i < 2; i++) {
 //     const a = prompt('Останній фільм', ''),
 //           b = prompt('Оцінка фільму', '');
-  
 //     if (a != null && b != null && a != '' && b != '' && a.length < 50) {
 //       personalMovieDB.movies[a] = b;
 //       console.log('Ок все');
@@ -199,7 +150,6 @@ P.S. Функции вызывать не обязательно*/
 //   }
 // }
 // // rememberMyFilms();
-
 // function detectPersonalLevel() {
 //   if (personalMovieDB.count < 10) {
 //     console.log('Мало, меньше 10');
@@ -211,64 +161,44 @@ P.S. Функции вызывать не обязательно*/
 //     console.log('Русня сосать');
 //   }
 // }
-
 // // detectPersonalLevel();
-
 // function writeYourGenres() {
 //   for (let i = 1; i <= 3; i++) {
 //     let j = prompt(`Ваш любимый жанр под номером ${i}`);
 //     personalMovieDB.genres[i - 1] = j;
 //   }
 // }
-
 // writeYourGenres();
-
 // function showMyDB() {
 //   if (personalMovieDB.privat === false) {
 //     console.log(personalMovieDB);
 //   }
 // }
-
 // showMyDB();
-
 // let awnsw = +prompt('Вкажіть число', '');
-
 // function calculateVolumeAndArea(length) {
-
 //   let volume = Math.pow(length, 3);
 //   let area = 6 * Math.pow(length, 2);
-
 //   if (typeof(length) !== 'number' || length < 0 || !Number.isInteger(length)) {
 //     console.log('Упс, щось пішло не так');
 //   } else {
 //     console.log(`Обʼєм - ${volume}, площа - ${area}`);
 //   }
 // }
-
 // calculateVolumeAndArea(awnsw);
-
 // function myTic(num) {
 //   if (num === )
 // }
-
 // myTic(32);
-
-
-
 // 1) Создайте функцию, которая принимает в себя целое число минут и возвращает время в нужном формате строки. (Смотри пример). Обратите внимание на окончание слова "час" - оно меняется в зависимости от цифры. Если вместо аргумента приходит не число, дробное или отрицательное число - функция возвращает строку "Ошибка, проверьте данные"
-
 // Внимание! Давайте пока ограничимся максимум 600ю минутами (10 часов). Так как проверки на большие числа будут раздувать код (33 часа, 31 час, 11 часов и тд). Этого будет достаточно и код будет проверять именно этот промежуток (1 - 10 часов). Но вы можете реализовать и полный скрипт, он тоже должен проходить тесты.
-
 // function getTimeFromMinutes(minutesTotal) {
 //   if (typeof(minutesTotal) !== 'number' || minutesTotal < 0 || !Number.isInteger(minutesTotal)) {
 //       return "Ошибка, проверьте данные";
 //   }
-
 //   const hours = Math.floor(minutesTotal / 60);
 //   const minutes = minutesTotal % 60;
-
 //   let hoursStr = '';
-
 //   switch (hours) {
 //       case 0: 
 //           hoursStr = 'часов';
@@ -284,29 +214,23 @@ P.S. Функции вызывать не обязательно*/
 //       default:
 //           hoursStr = 'часов';
 //   }
-
 //   return `Это ${hours} ${hoursStr} и ${minutes} минут`;
 // }
-
-
-
-  // let userLogin = prompt('Логін', '');
-
-  // if (userLogin == 'Адмін') {
-  //   let userPassword = prompt('Password?', '');
-  //   if (userPassword == 'батя') {
-  //     console.log('Hello, BOSS')
-  //   } else if(userPassword === null) {
-  //     console.log('Не')
-  //   } else {
-  //     console.log('Хз хто тии')
-  //   }
-  // } else if(userLogin === null) {
-  //   console.log('Пустота')
-  // } else {
-  //   console.log('Хз хто ти')
-  // }
-
+// let userLogin = prompt('Логін', '');
+// if (userLogin == 'Адмін') {
+//   let userPassword = prompt('Password?', '');
+//   if (userPassword == 'батя') {
+//     console.log('Hello, BOSS')
+//   } else if(userPassword === null) {
+//     console.log('Не')
+//   } else {
+//     console.log('Хз хто тии')
+//   }
+// } else if(userLogin === null) {
+//   console.log('Пустота')
+// } else {
+//   console.log('Хз хто ти')
+// }
 // const options = {
 //   name: 'test',
 //   width: 1024,
@@ -316,16 +240,11 @@ P.S. Функции вызывать не обязательно*/
 //     bg: 'red'
 //   }
 // };
-
 // console.log(Object.keys(options).length);
-
 // let keys = Object.keys(options);
-
 // console.log(keys);
-
 // delete options.name;
 // console.log(options);
-
 // for (let key in options) {
 //   if (typeof(options[key]) === 'object') {
 //     for (let i in options[key]) {
@@ -336,61 +255,24 @@ P.S. Функции вызывать не обязательно*/
 //   }
 // }
 
-// let arr = [1, 2, 3, 4, 5];
-
-// arr.forEach(function(item, i, arr) {
+var arr = [1, 2, 3, 4, 5]; // arr.forEach(function(item, i, arr) {
 //   console.log(`Індекс ${i} - ${item} в масиві ${arr}. Після зміни: ${item++}`);
 // });
 // console.log(arr);
 // arr.pop();
 // arr.push('6')
-
 // for (let i = 0; i < arr.length; i++) {
 //   console.log(arr[i]);
 // }
-
 // for (let value of arr) {
 //   console.log(value);
 // }
 // console.log(arr);
 
-// let str = 'Hello, How, are, you, ?'; // Строка, може приймати промпт і тд від користувача
-// let word = str.split(', '); // перероблює строку str в масив word. Кожен новий елемент розділенй в строці комою + пробіл
-// let strWord = word.join('; ') // назад з масива робе строку, розділяя елементи ;
-// word.sort(); // сортирує по алфавіту (дефолт) і тд
-// console.log(word, strWord);
+var str = 'Hello, How, are, you, ?'; // Строка, може приймати промпт і тд від користувача
 
-// function copy(mainObj) {
-//   let copyObj = {};
+var word = str.split(', '); // перероблює строку str в масив word. Кожен новий елемент розділенй в строці комою + пробіл
 
-//   let key;
+var strWord = word.join('; '); // назад з масива робе строку, розділяя елементи ;
 
-//   for (key in mainObj) {
-//     copyObj[key] = mainObj[key];
-//   }
-
-//   return copyObj;
-// }
-
-// let numbers = {
-//   a: 2,
-//   b: 5,
-//   c: {
-//     x: 7,
-//     y: 4,
-//   }
-// }
-
-// let add = {
-//   xx: 01,
-//   yy: 44,
-// }
-
-// let newNumbers = copy(numbers); 
-
-// newNumbers.a = 7;
-
-// console.log(newNumbers);
-// console.log(numbers);
-// console.log(Object.assign(numbers, add)); // assign добавляє в масив новий масив, пов копія. 1 куда, 2 шо
-
+word.console.log(word, strWord);
